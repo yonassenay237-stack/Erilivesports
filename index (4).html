@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERI LIVE SPORTS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: white;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            background-color: #1e293b;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+            border-bottom: 2px solid #334155;
+        }
+        .container {
+            padding: 20px;
+            width: 90%;
+            max-width: 500px;
+        }
+        .card {
+            background-color: #1e293b;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s;
+            border: 1px solid #334155;
+        }
+        .card:active {
+            transform: scale(0.95);
+            background-color: #334155;
+        }
+        .dot {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            margin-right: 15px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+        .card p {
+            font-size: 18px;
+            margin: 0;
+            font-weight: 500;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>ERI LIVE SPORTS</header>
+
+    <div class="container">
+        <div class="card" onclick="window.location.href='https://v2.footybite.com/premier-league'">
+            <div class="dot" style="background-color: #3d195d;"></div>
+            <p>Premier League</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='https://v2.footybite.com/champions-league'">
+            <div class="dot" style="background-color: #003399;"></div>
+            <p>Champions League</p>
+        </div>
+
+        <div class="card" onclick="window.location.href='https://v2.footybite.com/la-liga'">
+            <div class="dot" style="background-color: #ee680c;"></div>
+            <p>La Liga</p>
+        </div>
+    </div>
+
+    <div class="footer">© 2026 Eri Live Sports Streaming</div>
+
+</body>
+</html>
